@@ -9,10 +9,7 @@
 
   		?>
       <h1 class="column medium-12"><?php the_sub_field('titre'); ?></h1>
-  		<div class="column medium-12">
-        <?php the_sub_field('texte'); ?>
-  		</div>
-      <div>
+      <div class="ingredient-container">
         <?php
 
           // check if the repeater field has rows of data
@@ -20,11 +17,11 @@
 
            	// loop through the rows of data
               while ( have_rows('ingredient') ) : the_row(); ?>
-                  <div class="column medium-3">
+                  <div class="column medium-3 ingredient-contain">
                     <?php $image = get_sub_field('miniatures');
                       ?>
                       <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-                    <h3 class="nombre"><?php echo the_sub_field('nom_ingredient');?></h3>
+                    <h2 class="nombre"><?php echo the_sub_field('nom_ingredient');?></h2>
                   </div>
               <?php endwhile;
 

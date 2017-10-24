@@ -23,9 +23,9 @@
            	// loop through the rows of data
               while ( have_rows('chiffre_batch') ) : the_row(); ?>
                   <div class="column medium-4 chiffre-content">
-                    <div class="nombre"><?php echo the_sub_field('nombre');?></div>
-                    <div class="nombre-titre"><?php echo the_sub_field('sujet');?></div>
-                    <div class="nombre-text"><?php echo the_sub_field('sous_texte');?></div>
+                    <h1 class="nombre"><?php echo the_sub_field('nombre');?></h1>
+                    <h2 class="nombre-titre"><?php echo the_sub_field('sujet');?></h2>
+                    <p class="nombre-text"><?php echo the_sub_field('sous_texte');?></p>
                   </div>
               <?php endwhile;
 

@@ -8,8 +8,9 @@
   	while( have_rows('adn') ): the_row();
 
   		?>
-      <h1 class="column medium-12"><?php the_sub_field('titre'); ?></h1>
+
       <div class="column medium-6">
+        <h1><?php the_sub_field('titre'); ?></h1>
         <?php
 
           // check if the repeater field has rows of data
@@ -18,8 +19,8 @@
            	// loop through the rows of data
               while ( have_rows('paragraphe') ) : the_row();
               $image = get_sub_field('image_production');?>
-                  <div class="column medium-4">
-                    <h3><?php echo the_sub_field('sous-titre');?></h3>
+                  <div>
+                    <h2><?php echo the_sub_field('sous-titre');?></h2>
                     <p><?php echo the_sub_field('texte');?></p>
                   </div>
               <?php endwhile;

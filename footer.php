@@ -9,9 +9,9 @@
 						        ?>
 						       <div id="inner-footer" class="row expanded"style="background-image: url(<?php echo $image['url']; ?>);">
 										<div class="medium-6 column medium-centered ">
+											<h1 class="column medium-12"><?php the_field('titre'); ?></h1>
+									<div class="column medium-6 footer-left">
 
-									<div class="column medium-6">
-										<h1><?php the_field('titre'); ?></h1>
 										<p><?php the_field('adresse'); ?></p>
 										<?php if( have_rows('contact') ):
 
@@ -21,7 +21,6 @@
 												<div>
 
 														<h2><?php the_sub_field('nom'); ?></h2>
-														// check if the repeater field has rows of data
 														<?php if( have_rows('telephone') ):
 
 															// loop through the rows of data
@@ -41,9 +40,9 @@
 
 										<?php endif; ?>
 									</div>
-									<div class="column medium-6">
+									<div class="column medium-6 footer-right">
 
-														<h2>Mail</h2>
+														<h2>Mail : </h2>
 														<?php if( have_rows('mail') ):
 
 															// loop through the rows of data

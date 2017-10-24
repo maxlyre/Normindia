@@ -1,4 +1,12 @@
-<div id="histoire" class="row expanded">
+
+<?php if( have_rows('histoire') ):
+  while( have_rows('histoire') ): the_row();
+  $image = get_sub_field('image_background');
+?>
+<div id="histoire" class="row expanded" style="background-image: url(<?php echo $image['url']; ?>);">
+<?php endwhile; ?>
+<?php endif; ?>
+
   <div class="column medium-2">
   <p></p></div>
 
@@ -9,7 +17,7 @@
 
   		?>
       <h1 class="column medium-12"><?php the_sub_field('titre'); ?></h1>
-  		<div class="column medium-12">
+  		<div class="column medium-12 histoire_text">
         <?php the_sub_field('texte'); ?>
   		</div>
       <div>
@@ -20,10 +28,12 @@
 
            	// loop through the rows of data
               while ( have_rows('chiffre_histoire') ) : the_row(); ?>
-                  <div class="column medium-4 chiffre-content">
-                    <div class="nombre"><?php echo the_sub_field('nombre');?></div>
-                    <div class="nombre-titre"><?php echo the_sub_field('sujet');?></div>
-                    <div class="nombre-text"><?php echo the_sub_field('sous_texte');?></div>
+                  <div class="column medium-4">
+                    <div class="chiffre-content">
+                      <h1 class="nombre"><?php echo the_sub_field('nombre');?></h1>
+                      <h2 class="nombre-titre"><?php echo the_sub_field('sujet');?></h2>
+                      <p class="nombre-text"><?php echo the_sub_field('sous_texte');?></p>
+                    </div>
                   </div>
               <?php endwhile;
 
@@ -41,13 +51,5 @@
   </div>
   <div class="column medium-2">
   </div>
-  <?php if( have_rows('histoire') ):
 
-    while( have_rows('histoire') ): the_row();
-    $image = get_sub_field('image_background');
-      ?>
-      <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-    <?php endwhile; ?>
-
-  <?php endif; ?>
 </div>

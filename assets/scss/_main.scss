@@ -7,7 +7,34 @@ Stylesheet: Main Stylesheet
 /*********************
 GENERAL STYLES
 *********************/
+@font-face {
+    font-family: 'brandon';
+    src: url('../font/brandongrotesque-bold-webfont.woff2') format('woff2'),
+         url('../font/brandongrotesque-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
 
+}
+
+
+
+
+@font-face {
+    font-family: 'brandon';
+    src: url('../font/brandongrotesque-medium-webfont.woff2') format('woff2'),
+         url('../font/brandongrotesque-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	letter-spacing: 1px;
+	background-image: url(../images/background-header.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: contain;
+}
 /*********************
 LINK STYLES
 *********************/
@@ -17,6 +44,7 @@ a, a:visited {
 	&:link {
 		//Highlight links on iOS, Similar to :hover for mobile devices.
 		-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
+		color: white;
 	}
 }
 
@@ -28,15 +56,25 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	// Removing text decoration from all headline links
 	a {
 		text-decoration: none;
+		color : $white;
 	}
 }
 
 h1, .h1 {
-
+	text-transform : uppercase;
+	margin-bottom: 25px;
+	&:after{
+		content: "";
+    width: 60px;
+    height: 6px;
+    display: block;
+    background-color: $gold;
+    margin: 5px 0 0 0;
+	}
 }
 
 h2, .h2 {
-
+	text-transform : uppercase;
 }
 
 h3, .h3 {
@@ -50,7 +88,22 @@ h4, .h4 {
 h5, .h5 {
 
 }
-
+.p2{
+	font-weight: bold;
+	color : #878787;
+	font-size: 14px;
+}
+.prod-text{
+	font-weight: bold;
+	font-size: 27px;
+	color  : white;
+	text-transform: uppercase;
+}
+footer{
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+}
 /*********************
 HEADER STYLES
 *********************/
@@ -75,7 +128,13 @@ NAVIGATION STYLES
 		li {
 			a {
 				border-bottom: 0px;
+				font-size: 11px;
+				color : #8f7051;
 			}
+			.active{
+				color : white;
+			}
+
 		}
 		.dropdown {
 			margin-left: 20px;
@@ -91,92 +150,187 @@ POSTS & CONTENT STYLES
 		padding: 1rem 0rem;
 	}
 }
-
-.single-title,
-.page-title {
-
-}
-
-.single-title {
-
-}
-
-.page-title {
-
-	// Remove Foundation vcard styling from author page titles
-	.vcard {
-		border: 0px;
-		padding: 0px;
-	}
-}
-
-.archive-title {
-
-}
-
-// Post meta
-.byline {
-	color: #999;
-	time {}
-}
-
-// Entry content
-.entry-content {
-
-	img {
-		max-width: 100%;
-		height: auto;
-	}
-
-	.alignleft, img.alignleft {
-		margin-right: 1.5em;
-		display: inline;
-		float: left;
-	}
-	.alignright, img.alignright {
-		margin-left: 1.5em;
-		display: inline;
-		float: right;
-	}
-	.aligncenter, img.aligncenter {
-		margin-right: auto;
-		margin-left: auto;
+#header-img{
+	padding-bottom: 180px;
+	img{
 		display: block;
-		clear: both;
+		margin: auto;
+		    width: 60%;
 	}
-
-	video, object {
-		max-width: 100%;
-		height: auto;
-		}
-
-	pre {
-		background: #eee;
-		border: 1px solid #cecece;
-		padding: 10px;
-		}
-
 }
+#histoire{
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size:contain;
+	padding-bottom: 77px;
 
-.wp-caption {
-	max-width: 100%;
-	background: #eee;
-	padding: 5px;
-
-	// Images inside wp-caption
-	img {
-		max-width: 100%;
-		margin-bottom: 0;
-		width: 100%;
+	.histoire_text{
+		margin-bottom: 77px;
+		p{
+			color: #987654;
+		}
 	}
 
-	p.wp-caption-text {
-		font-size: 0.85em;
-		margin: 4px 0 7px;
+	>div div{
+		$grid-column-gutter: 50px;
+	}
+	.chiffre-content{
+		border:1px solid #c19b76;
+		box-shadow: 5px 5px 5px rgba(0,0,0,0.06);
 		text-align: center;
+		padding: 65px 15px;
+
+		h1{
+			color : $medium-gray;
+			text-transform: none;
+			margin-bottom: 30px;
+			&:after{
+				content :"";
+				width: 35%;
+				height:3px;
+				display: block;
+				background-color: $gold;
+				margin: auto;
+			}
+		}
+		h2{
+			color: $red;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
+		p{
+			color: $light-gray;
+			&:after{
+				content :"";
+				width: 45%;
+				height:10px;
+				display: block;
+				background-color: $gold;
+				margin: 25px auto 0 auto;
+			}
+		}
 	}
 }
 
+#production{
+	background: #d9d9d9;
+	.production-content{
+		    padding: 60px 40px 110px 0;
+	}
+	h1{
+		margin-bottom: 0px;
+		&:after{
+			display:none;
+		}
+	}
+	h2{
+		color: $medium-gray;
+		margin-bottom: 40px;
+	}
+	.etape-content{
+		text-align: center;
+		.miniature{
+			&:after{
+				content :"";
+				width: 30%;
+				height:3px;
+				display: block;
+				background-color: $gold;
+				margin: 20px auto 0 auto;
+			}
+			margin-bottom: 30px;
+		}
+		.etape-text{
+			&:after{
+				content :"";
+				width: 45%;
+				height:10px;
+				display: block;
+				background-color: $gold;
+				margin: 25px auto 0 auto;
+			}
+		}
+	}
+	.production_text_container{
+		background-size: cover;
+		background-position: center;
+		.production_text{
+			@extend .prod-text;
+			width: 70%;
+			margin : auto;
+		}
+	}
+
+}
+#adn{
+	padding-top: 90px;
+	padding-bottom: 50px;
+	p{
+		margin-bottom: 2rem;
+	}
+	img{
+		max-width: 400px;
+		height: auto;
+		display: block;
+		margin: auto;
+	}
+}
+
+#ingredients{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	.ingredient-container{
+		.ingredient-contain{
+			text-align: center;
+			margin-bottom: 40px;
+			h2{
+				margin-top: 10px;
+			}
+		}
+	}
+}
+#batch{
+	padding-top: 50px;
+	padding-bottom: 90px;
+	img{
+		display: block;
+		margin: auto;
+	}
+	.chiffre-content{
+		text-align: center;
+		padding: 65px 15px;
+
+		h1{
+			color : $medium-gray;
+			text-transform: none;
+			margin-bottom: 30px;
+			&:after{
+				content :"";
+				width: 35%;
+				height:3px;
+				display: block;
+				background-color: $gold;
+				margin: auto;
+			}
+		}
+		h2{
+			color: $red;
+			text-transform: uppercase;
+			margin-bottom: 10px;
+		}
+		p{
+			color: $light-gray;
+			&:after{
+				content :"";
+				width: 45%;
+				height:10px;
+				display: block;
+				background-color: $gold;
+				margin: 25px auto 0 auto;
+			}
+		}
+	}
+}
 // Add Foundation styling to password protect button
 .post-password-form input[type="submit"] {
 	@include button;
@@ -500,6 +654,40 @@ FOOTER STYLES
 .footer {
 	clear: both;
 	margin-top: 1em;
+	#inner-footer{
+		padding: 60px 0 60px 0;
+	}
+	h1{
+		@extend .prod-text;
+		margin-bottom: 10px;
+		&:after{
+			display: none;
+		}
+	}
+	.footer-left{
+
+		h2{
+			color: white;
+			text-transform: none;
+			margin-top: 10px;
+			margin-bottom: 0px;
+		}
+		.telephone{
+			margin-bottom: 0;
+			line-height: 1.2;
+		}
+	}
+	.footer-right{
+		h2{
+			color: white;
+			text-transform: none;
+			margin-top: 0;
+			margin-bottom: 0px;
+		}
+		a{
+			display: block;
+		}
+	}
 }
 
 /*********************

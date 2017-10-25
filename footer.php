@@ -1,4 +1,4 @@
-				<footer class="footer" id="contact" role="contentinfo">
+				<footer class="footer" id="contact" role="contentinfo" data-magellan-target="contact">
 
 							<?php
 									// query for the about page

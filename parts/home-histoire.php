@@ -3,7 +3,7 @@
   while( have_rows('histoire') ): the_row();
   $image = get_sub_field('image_background');
 ?>
-<div id="histoire" class="row expanded" style="background-image: url(<?php echo $image['url']; ?>);">
+<div id="histoire" class="row expanded" style="background-image: url(<?php echo $image['url']; ?>);" data-magellan-target="histoire">
 <?php endwhile; ?>
 <?php endif; ?>
 
@@ -20,7 +20,7 @@
   		<div class="column medium-12 histoire_text">
         <?php the_sub_field('texte'); ?>
   		</div>
-      <div>
+      <div class="chiffre_container">
         <?php
 
           // check if the repeater field has rows of data

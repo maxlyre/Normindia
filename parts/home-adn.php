@@ -1,4 +1,4 @@
-<div id="adn" class="row expanded">
+<div id="adn" class="row expanded" data-magellan-target="adn">
   <div class="column medium-2">
   <p></p></div>
 

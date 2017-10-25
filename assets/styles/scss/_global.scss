@@ -122,17 +122,29 @@ NAVIGATION STYLES
 	}
 }
 
-.off-canvas-list {
-	ul {
+
+	.menu{
 		margin-left: 0;
+    display: inline-block;
 		li {
 			a {
 				border-bottom: 0px;
-				font-size: 11px;
+				font-size: 12px;
 				color : #8f7051;
+        text-transform: uppercase;
+        position:relative;
 			}
-			.active{
+			.is-active{
 				color : white;
+        &:after{
+          content: "";
+          width: 30px;
+          height: 2px;
+          bottom: 6px;
+          position: absolute;
+          display: block;
+          background-color: #8f7051;
+  			}
 			}
 
 		}
@@ -140,6 +152,24 @@ NAVIGATION STYLES
 			margin-left: 20px;
 		}
 	}
+.social{
+  display: inline-block;
+  margin-bottom: 0;
+  margin-right: 40px;
+  li{
+    display:inline-block;
+    a{
+      display: inline-block;
+      padding: 0 0.5rem ;
+    }
+    img{
+      display: inline-block;
+      height : 14px;
+      width: auto;
+      position: relative;
+      top: -2px;
+    }
+  }
 }
 
 /*********************
@@ -150,8 +180,8 @@ POSTS & CONTENT STYLES
 		padding: 1rem 0rem;
 	}
 }
-#header-img{
-	padding-bottom: 180px;
+#normindia{
+	padding-bottom: 90px;
 	img{
 		display: block;
 		margin: auto;
@@ -163,6 +193,7 @@ POSTS & CONTENT STYLES
 	background-position: right top;
 	background-size:contain;
 	padding-bottom: 77px;
+  padding-top: 90px;
 
 	.histoire_text{
 		margin-bottom: 77px;
@@ -174,11 +205,31 @@ POSTS & CONTENT STYLES
 	>div div{
 		$grid-column-gutter: 50px;
 	}
+  .chiffre_container{
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    clear: both;
+  }
 	.chiffre-content{
+    height: 100%;
 		border:1px solid #c19b76;
 		box-shadow: 5px 5px 5px rgba(0,0,0,0.06);
 		text-align: center;
 		padding: 65px 15px;
+    position:relative;
+    max-width: 328px;
+    &:after{
+      content: "";
+      width: 40%;
+      height: 10px;
+      display: block;
+      background-color: #c19b76;
+      position: absolute;
+      bottom: 55px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
 
 		h1{
 			color : $medium-gray;
@@ -186,7 +237,7 @@ POSTS & CONTENT STYLES
 			margin-bottom: 30px;
 			&:after{
 				content :"";
-				width: 35%;
+				width: 25%;
 				height:3px;
 				display: block;
 				background-color: $gold;
@@ -200,14 +251,6 @@ POSTS & CONTENT STYLES
 		}
 		p{
 			@extend .p2;
-			&:after{
-				content :"";
-				width: 45%;
-				height:10px;
-				display: block;
-				background-color: $gold;
-				margin: 25px auto 0 auto;
-			}
 		}
 	}
 }
@@ -216,7 +259,15 @@ POSTS & CONTENT STYLES
 	background: #d9d9d9;
 	.production-content{
 		    padding: 60px 40px 110px 0;
+
+        .production_container{
+          display: -ms-flex;
+          display: -webkit-flex;
+          display: flex;
+          clear: both;
+        }
 	}
+
 	h1{
 		margin-bottom: 0px;
 		&:after{
@@ -229,6 +280,19 @@ POSTS & CONTENT STYLES
 	}
 	.etape-content{
 		text-align: center;
+    position:relative;
+    padding-bottom: 45px;
+    &:after{
+      content :"";
+      width: 40%;
+      height: 10px;
+      display: block;
+      background-color: #c19b76;
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
 		.miniature{
 			&:after{
 				content :"";
@@ -241,14 +305,8 @@ POSTS & CONTENT STYLES
 			margin-bottom: 30px;
 		}
 		.etape-text{
-			&:after{
-				content :"";
-				width: 45%;
-				height:10px;
-				display: block;
-				background-color: $gold;
-				margin: 25px auto 0 auto;
-			}
+      max-width: 230px;
+      margin: auto;
 		}
 	}
 	.production_text_container{
@@ -257,7 +315,10 @@ POSTS & CONTENT STYLES
 		.production_text{
 			@extend .prod-text;
 			width: 70%;
-			margin : auto;
+			margin-left : auto;
+      margin-right : auto;
+      margin-top: 50%;
+      transform: translateY(-50%);
 		}
 	}
 
@@ -296,9 +357,28 @@ POSTS & CONTENT STYLES
 		display: block;
 		margin: auto;
 	}
+  .chiffre_container{
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    clear: both;
+  }
 	.chiffre-content{
 		text-align: center;
 		padding: 65px 15px;
+    position:relative;
+
+    &:after{
+      content: "";
+      width: 40%;
+      height: 10px;
+      display: block;
+      background-color: #c19b76;
+      position: absolute;
+      bottom: 35px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
 
 		h1{
 			color : $medium-gray;
@@ -306,7 +386,7 @@ POSTS & CONTENT STYLES
 			margin-bottom: 30px;
 			&:after{
 				content :"";
-				width: 35%;
+				width: 30%;
 				height:3px;
 				display: block;
 				background-color: $gold;
@@ -320,14 +400,9 @@ POSTS & CONTENT STYLES
 		}
 		p{
 			@extend .p2;
-			&:after{
-				content :"";
-				width: 45%;
-				height:10px;
-				display: block;
-				background-color: $gold;
-				margin: 25px auto 0 auto;
-			}
+      max-width: 150px;
+      margin: auto;
+
 		}
 	}
 }

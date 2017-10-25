@@ -1,4 +1,4 @@
-<div id="production" class="row expanded">
+<div id="production" class="row expanded" data-magellan-target="production">
   <div class="column medium-2">
   <p></p></div>
 
@@ -10,7 +10,7 @@
   		?>
       <h1 class="column medium-12"><?php the_sub_field('titre'); ?></h1>
       <h2 class="column medium-12"><?php the_sub_field('sous-titre'); ?></h2>
-      <div>
+      <div class="production_container">
         <?php
 
           // check if the repeater field has rows of data

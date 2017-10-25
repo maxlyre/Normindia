@@ -1,4 +1,4 @@
-<div id="ingredients" class="row expanded">
+<div id="ingredients" class="row expanded" data-magellan-target="ingredients">
   <div class="column medium-2">
   <p></p></div>
 

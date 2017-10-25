@@ -3,7 +3,8 @@
 		<div class="top-bar-left">
 		</div>
 		<div class="top-bar-right">
-			<ul class="menu" data-smooth-scroll>
+			<ul class="menu" data-magellan>
+				<li><a href="#normindia">Normindia</a></li>
 				<li><a href="#histoire">Histoire</a></li>
 				<li><a href="#production">Production</a></li>
 				<li><a href="#adn">ADN</a></li>
@@ -11,10 +12,10 @@
 				<li><a href="#batch">Batch</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
-			<ul>
-				<li><a href=""><img src=""></a>
-				<li><a href=""><img src=""></a>
-				<li><a href=""><img src=""></a>
+			<ul class="social">
+				<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/logo-instagram.svg"></a>
+				<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/logo-twitter.svg"></a>
+				<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/icon-social-facebook.svg"></a>
 			</ul>
 		</div>
 	</div>

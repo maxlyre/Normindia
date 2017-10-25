@@ -1,4 +1,4 @@
-				<footer class="footer" role="contentinfo">
+				<footer class="footer" id="contact" role="contentinfo">
 
 							<?php
 									// query for the about page

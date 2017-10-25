@@ -1,12 +1,21 @@
 <div data-sticky-container>
 	<div class="top-bar" id="main-menu" data-sticky data-margin-top="0">
 		<div class="top-bar-left">
-			<ul class="menu">
-				<li><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></li>
-			</ul>
 		</div>
 		<div class="top-bar-right">
-			<?php joints_top_nav(); ?>
+			<ul class="menu" data-smooth-scroll>
+				<li><a href="#histoire">Histoire</a></li>
+				<li><a href="#production">Production</a></li>
+				<li><a href="#adn">ADN</a></li>
+				<li><a href="#ingredients">Ingrédients</a></li>
+				<li><a href="#batch">Batch</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			<ul>
+				<li><a href=""><img src=""></a>
+				<li><a href=""><img src=""></a>
+				<li><a href=""><img src=""></a>
+			</ul>
 		</div>
 	</div>
 </div>

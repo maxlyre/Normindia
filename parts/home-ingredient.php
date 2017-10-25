@@ -1,8 +1,8 @@
 <div id="ingredients" class="row expanded" data-magellan-target="ingredients">
-  <div class="column medium-2">
+  <div class="column xlarge-2 large-1 medium-0">
   <p></p></div>
 
-  <div class="column medium-8">
+  <div class="column xlarge-8 large-10 medium-12">
   <?php if( have_rows('ingredients') ):
 
   	while( have_rows('ingredients') ): the_row();
@@ -17,7 +17,7 @@
 
            	// loop through the rows of data
               while ( have_rows('ingredient') ) : the_row(); ?>
-                  <div class="column medium-3 ingredient-contain">
+                  <div class="column medium-3 small-6 ingredient-contain">
                     <?php $image = get_sub_field('miniatures');
                       ?>
                       <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
@@ -37,6 +37,6 @@
 
   <?php endif; ?>
   </div>
-  <div class="column medium-2">
+  <div class="column xlarge-2 large-1 medium-0">
   </div>
 </div>

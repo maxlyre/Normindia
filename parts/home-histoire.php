@@ -7,10 +7,10 @@
 <?php endwhile; ?>
 <?php endif; ?>
 
-  <div class="column medium-2">
+  <div class="column xlarge-2 large-1 medium-0">
   <p></p></div>
 
-  <div class="column medium-8">
+  <div class="column xlarge-8 large-10 medium-12">
   <?php if( have_rows('histoire') ):
 
   	while( have_rows('histoire') ): the_row();
@@ -28,7 +28,7 @@
 
            	// loop through the rows of data
               while ( have_rows('chiffre_histoire') ) : the_row(); ?>
-                  <div class="column medium-4">
+                  <div class="column medium-4 small-12 small-centered">
                     <div class="chiffre-content">
                       <h1 class="nombre"><?php echo the_sub_field('nombre');?></h1>
                       <h2 class="nombre-titre"><?php echo the_sub_field('sujet');?></h2>
@@ -49,7 +49,7 @@
 
   <?php endif; ?>
   </div>
-  <div class="column medium-2">
+  <div class="column xlarge-2 large-1 medium-0">
   </div>
 
 </div>

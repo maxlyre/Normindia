@@ -1,15 +1,15 @@
 <div id="adn" class="row expanded" data-magellan-target="adn">
-  <div class="column medium-2">
+  <div class="column xlarge-2 large-1 medium-0">
   <p></p></div>
 
-  <div class="column medium-8">
+  <div class="column xlarge-8 large-10 medium-12">
   <?php if( have_rows('adn') ):
 
   	while( have_rows('adn') ): the_row();
 
   		?>
 
-      <div class="column medium-6">
+      <div class="column medium-6 small-12">
         <h1><?php the_sub_field('titre'); ?></h1>
         <?php
 
@@ -33,7 +33,7 @@
 
           ?>
       </div>
-      <div class="column medium-6">
+      <div class="column medium-6 small-12">
         <?php $image = get_sub_field('image');
           ?>
           <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
@@ -42,6 +42,6 @@
 
   <?php endif; ?>
   </div>
-  <div class="column medium-2">
+  <div class="column xlarge-2 large-1 medium-0">
   </div>
 </div>

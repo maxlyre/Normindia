@@ -8,7 +8,7 @@
 									$image = get_field('background_image_footer');
 						        ?>
 						       <div id="inner-footer" class="row expanded"style="background-image: url(<?php echo $image['url']; ?>);">
-										<div class="medium-6 column medium-centered ">
+										<div class="large-6 medium-10 column medium-centered ">
 											<h1 class="column medium-12"><?php the_field('titre'); ?></h1>
 									<div class="column medium-6 footer-left">
 
@@ -47,7 +47,7 @@
 
 															// loop through the rows of data
 																while ( have_rows('mail') ) : the_row(); ?>
-																			<a href="<?php echo the_sub_field('adresse_mail');?>" class="mail"><?php echo the_sub_field('adresse_mail');?></a>
+																			<a href="mailto:<?php echo the_sub_field('adresse_mail');?>" class="mail"><?php echo the_sub_field('adresse_mail');?></a>
 																<?php endwhile;
 
 														else :
@@ -68,8 +68,7 @@
 
 
 				</footer> <!-- end .footer -->
-			</div>  <!-- end .main-content -->
-		</div> <!-- end .off-canvas-wrapper -->
+
 		<?php wp_footer(); ?>
 	</body>
 </html> <!-- end page -->

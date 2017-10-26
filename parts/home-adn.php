@@ -8,9 +8,9 @@
   	while( have_rows('adn') ): the_row();
 
   		?>
-
+      <h1 class="column medium-12 show-for-small hide-for-large titre-small"><?php the_sub_field('titre'); ?></h1>
       <div class="column medium-6 small-12">
-        <h1><?php the_sub_field('titre'); ?></h1>
+        <h1 class="show-for-large hide-for-small"><?php the_sub_field('titre'); ?></h1>
         <?php
 
           // check if the repeater field has rows of data

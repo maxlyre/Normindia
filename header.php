@@ -38,11 +38,6 @@
 
 	<body <?php body_class(); ?>>
 
-		<div class="off-canvas-wrapper">
-
-			<?php get_template_part( 'parts/content', 'offcanvas' ); ?>
-
-			<div class="off-canvas-content" data-off-canvas-content>
 
 				<header class="header" role="banner">
 

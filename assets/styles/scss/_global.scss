@@ -486,6 +486,47 @@ POSTS & CONTENT STYLES
 	@include button;
 }
 
+#age{
+  background-color: #f2f2f2;
+  max-width: 450px;
+  padding:40px;
+  .age-container{
+    text-align: center;
+      .alert{
+        margin-top: 30px;
+        text-transform: uppercase;
+        color: #b09970;
+      }
+      .language{
+        margin-top: 30px;
+      }
+      label{
+        text-align: left;
+        text-transform: uppercase;
+      }
+      select{
+        border:1px solid $medium-gray !important;
+      }
+      .wpcf7{
+        margin-top: 15px;
+      }
+      #age-validation{
+        input{
+          margin-right: 10px;
+        }
+        text-align: left;
+        line-height: 0.4;
+      }
+      #age-verification{
+        background-color: #aeabaa;
+        text-transform: uppercase;
+        float : right;
+        padding: 10px 20px;
+        margin-top: 20px;
+      }
+  }
+}
+
 /*********************
 IMAGE GALLERY STYLES
 *********************/
@@ -750,7 +791,7 @@ RESPONSIVE
     margin-top: 40px;
   }
 }
-@include breakpoint(800) {
+@include breakpoint(760) {
   body{
     background-image: url(../images/background-header-small.png);
     background-size: 123% auto;

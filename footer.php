@@ -68,7 +68,17 @@
 
 
 				</footer> <!-- end .footer -->
-
+							<!-- #age verification modal -->
+			<div class="reveal" id="age" data-reveal data-close-on-esc="false" data-close-on-click="false" >
+				<div class="age-container">
+					<img class="modal-logo" src="<?php echo get_template_directory_uri().'/assets/images/logo.png' ?>" alt="Coquerel Logo">
+					<p class="alert"><?php pll_e('In order to navigate on this website you must have the minimum legal drinking age') ?></p>
+					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Language") ) : ?><?php endif;?>
+					<?php echo do_shortcode('[contact-form-7 id="85" title="Age légal"]'); ?>
+					<p id="age-validation"><input type="checkbox" class="age_tcheck"><span><?php pll_e('I hereby certify that I am at least 16 years old to access this website') ?></span></p>
+					<a id="age-verification" class="inactive" href="#validation"><?php pll_e('Enter') ?></a>
+				</div>
+			</div>
 		<?php wp_footer(); ?>
 	</body>
 </html> <!-- end page -->

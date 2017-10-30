@@ -13,9 +13,8 @@
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 			<ul class="social">
-				<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/logo-instagram.svg"></a>
-				<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/logo-twitter.svg"></a>
-				<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/icon-social-facebook.svg"></a>
+				<li><a href="https://www.instagram.com/normindiagin/"><img src="<?php bloginfo('template_url'); ?>/assets/images/logo-instagram.svg"></a>
+				<li><a href="https://www.facebook.com/CalvadosCoquerel/"><img src="<?php bloginfo('template_url'); ?>/assets/images/icon-social-facebook.svg"></a>
 			</ul>
 		</div>
 	</div>
@@ -32,9 +31,8 @@
 			<li><a href="#contact">Contact</a></li>
 		</ul>
 		<ul class="social">
-			<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/logo-instagram.svg"></a>
-			<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/logo-twitter.svg"></a>
-			<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/icon-social-facebook.svg"></a>
+			<li><a href="https://www.instagram.com/normindiagin/"><img src="<?php bloginfo('template_url'); ?>/assets/images/logo-instagram.svg"></a>
+			<li><a href="https://www.facebook.com/CalvadosCoquerel/"><img src="<?php bloginfo('template_url'); ?>/assets/images/icon-social-facebook.svg"></a>
 		</ul>
 	</div>
 </div>

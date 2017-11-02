@@ -21,5 +21,5 @@ jQuery( "body" ).on( "click","#age-verification", function() {
   if (jQuery('.age_tcheck').is(':checked')) {
         jQuery('#age').foundation('close');
         jQuery.cookie("age", "true");
-    } 
+    }
 });

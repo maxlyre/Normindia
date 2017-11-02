@@ -17,7 +17,7 @@
 
   		?>
       <h1 class="column medium-12"><?php the_sub_field('titre'); ?></h1>
-  		<div class="column medium-12 histoire_text">
+  		<div class="column xlarge-9 medium-12 histoire_text">
         <?php the_sub_field('texte'); ?>
   		</div>
       <div class="chiffre_container">

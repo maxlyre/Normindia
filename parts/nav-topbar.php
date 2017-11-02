@@ -4,13 +4,14 @@
 		</div>
 		<div class="top-bar-right">
 			<ul class="menu" data-magellan>
-				<li><a href="#normindia">Normindia</a></li>
-				<li><a href="#histoire">Histoire</a></li>
-				<li><a href="#production">Production</a></li>
-				<li><a href="#adn">ADN</a></li>
-				<li><a href="#ingredients">Ingrédients</a></li>
-				<li><a href="#batch">Batch</a></li>
-				<li><a href="#contact">Contact</a></li>
+				<li><a href="#normindia"><?php pll_e('Normindia')?></a></li>
+				<li><a href="#histoire"><?php pll_e('Histoire')?></a></li>
+				<li><a href="#production"><?php pll_e('Production')?></a></li>
+				<li><a href="#adn"><?php pll_e('ADN')?></a></li>
+				<li><a href="#ingredients"><?php pll_e('Ingrédients')?></a></li>
+				<li><a href="#batch"><?php pll_e('Batch')?></a></li>
+				<li><a href="#contact"><?php pll_e('Contact')?></a></li>
+				<li class="lang-item <?php echo $lang=get_bloginfo("language"); ?>"><a class="fr" lang="fr-FR" hreflang="fr-FR" href="http://gin-normindia.com/">FR</a>/<a class="en" lang="en-GB" hreflang="en-GB" href="http://gin-normindia.com/en/homepage/">EN</a></li>
 			</ul>
 			<ul class="social">
 				<li><a href="https://www.instagram.com/normindiagin/"><img src="<?php bloginfo('template_url'); ?>/assets/images/logo-instagram.svg"></a>
@@ -22,13 +23,14 @@
 <div id="ModalMenu" class="hide-mobile-menu">
 	<div class="menu-mobile-container">
 		<ul class="menu" data-magellan>
-			<li><a href="#normindia">Normindia</a></li>
-			<li><a href="#histoire">Histoire</a></li>
-			<li><a href="#production">Production</a></li>
-			<li><a href="#adn">ADN</a></li>
-			<li><a href="#ingredients">Ingrédients</a></li>
-			<li><a href="#batch">Batch</a></li>
-			<li><a href="#contact">Contact</a></li>
+			<li><a href="#normindia"><?php pll_e('Normindia')?></a></li>
+			<li><a href="#histoire"><?php pll_e('Histoire')?></a></li>
+			<li><a href="#production"><?php pll_e('Production')?></a></li>
+			<li><a href="#adn"><?php pll_e('ADN')?></a></li>
+			<li><a href="#ingredients"><?php pll_e('Ingrédients')?></a></li>
+			<li><a href="#batch"><?php pll_e('Batch')?></a></li>
+			<li><a href="#contact"><?php pll_e('Contact')?></a></li>
+			<li class="lang-item  <?php echo $lang=get_bloginfo("language"); ?>"><a  class="fr" lang="fr-FR" hreflang="fr-FR" href="http://gin-normindia.com/">FR</a>/<a class="en" lang="en-GB" hreflang="en-GB" href="http://gin-normindia.com/en/homepage/">EN</a></li>
 		</ul>
 		<ul class="social">
 			<li><a href="https://www.instagram.com/normindiagin/"><img src="<?php bloginfo('template_url'); ?>/assets/images/logo-instagram.svg"></a>

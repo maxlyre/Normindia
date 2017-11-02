@@ -55,3 +55,14 @@ if ( function_exists('register_sidebar') )
     'after_title' => '</h3>',
   )
 );
+
+//Shortcode [polylang]
+function polylang_shortcode() {
+	ob_start();
+
+	pll_the_languages(array('show_flags'=>0,'show_names'=>0));
+
+	$flags = ob_get_clean();
+	return $flags;
+}
+add_shortcode( 'polylang', 'polylang_shortcode' );
